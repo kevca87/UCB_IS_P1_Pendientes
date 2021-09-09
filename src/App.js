@@ -1,7 +1,7 @@
 const todo_input = document.querySelector("#todo-input");
+const category_input = document.querySelector("#category");
 const form = document.querySelector("#form");
 const todo_out = document.querySelector("#todo-out");
-
 /*
 var greetings = {
         0:{
@@ -21,5 +21,5 @@ var greetings = {
 
 form.addEventListener("submit",event=>{
     event.preventDefault();
-    todo_out.innerHTML = todo_input.value;
+    todo_out.innerHTML = todo_input.value + " ["+category_input.value+"]";
 })
